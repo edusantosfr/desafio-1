@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+    font-family: "Neue Montreal-Regular";
+    src: url(./fonts/NeueMontreal-Regular.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #ffba52;
+    --body-color: #f9f9f9;
+    --title-font-family: "Josefin Sans", serif;
+    --body-font-family: "Neue Montreal-Regular", serif;
+    --color-font-gray: rgb(49, 49, 49);
+}
+
+/* INDEX */
+
+#container-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 100vh 20vh;
+    height: 200vh;
+
+    grid-template-areas: 
+        "navi-bar"
+        "about" 
+        "footer"
+    ;
+}
+
+.navi-bar {
+    grid-area: navi-bar;
+    background-image: url(./assets/backgroundm-menu.png);
+    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+
+    justify-items: center;
+}
+
+.navi-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 2rem;
+    font-family: var(--body-font-family);
+}
+
+.logo {
+    font-family: var(--title-font-family);
+    color: var(--body-color);
+}
+
+.navigation {
+    background-color: #ffba52;
+    height: 3rem;
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.navigation a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding-inline: 2rem;
+}
+
+.cadaster-btn a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color-font-gray);
+    border: 1px solid var(--color-font-gray);
+    padding: .8rem;
+    padding-inline: 1.6rem;
+    border-radius: 30px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    font-family: var(--title-font-family);
+    font-size: 8rem;
+}
+
+.menu-container img {
+    height: 80vh;
+}
+
+.menu-container p {
+    text-align: end;
+    color: var(--color-font-gray);
+}
+
+.menu-container span {
+    color: #ffba52;
+    font-weight: 900;
+}
+
+#about {
+    grid-area: about;
+    background: rgb(255, 255, 255);
+}
+
+#footer {
+    grid-area: footer;
+    background: black;
+}
+
+/* CLIENTLIST */
+
+/* ESHOP */
