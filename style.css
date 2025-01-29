@@ -12,11 +12,18 @@
 }
 
 :root {
-    --color: #ffba52;
     --body-color: #f9f9f9;
-    --title-font-family: "Josefin Sans", serif;
+    --font-family: "Josefin Sans", serif;
     --body-font-family: "Neue Montreal-Regular", serif;
     --color-font-gray: rgb(49, 49, 49);
+    --color-body-green: #407775;
+    --color-body-lightgreen: #6f7f6c;
+    --color-body-orange: #ec6e40;
+    --color-body-yellow: #ffba52;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* INDEX */
@@ -24,7 +31,7 @@
 #container-index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90vh 100vh 20vh;
+    grid-template-rows: 90vh 1fr 200px;
     height: 200vh;
 
     grid-template-areas: 
@@ -53,12 +60,26 @@
 }
 
 .logo {
-    font-family: var(--title-font-family);
+    font-family: var(--font-family);
     color: var(--body-color);
+    display: flex;
+}
+
+.logo a {
+    font-size: 1.7rem;
+    margin-top: 7px;
+    margin-left: 5px;
+    font-weight: 900;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    height: 35px;
 }
 
 .navigation {
-    background-color: #ffba52;
+    background-color: var(--color-body-orange);
     height: 3rem;
     width: 18rem;
     display: flex;
@@ -89,12 +110,12 @@
     align-items: center;
     justify-content: center;
     width: 70%;
-    font-family: var(--title-font-family);
+    font-family: var(--font-family);
     font-size: 8rem;
 }
 
 .menu-container img {
-    height: 80vh;
+    height: 81.6vh;
 }
 
 .menu-container p {
@@ -107,14 +128,90 @@
     font-weight: 900;
 }
 
+.span-patinha {
+    color: var(--color-body-green) !important;
+}
+
 #about {
+    display: flex;
+    justify-content: center;
     grid-area: about;
-    background: rgb(255, 255, 255);
+    background: var(--color-body-green);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text {
+    padding: 40px;
+    border: 2px solid var(--color-body-orange);
+    border-radius: 30px;
+    margin-right: 60px;
+}
+
+.text h2 {
+    color: var(--color-body-yellow);
+    font-family: var(--font-family);
+    font-size: 4rem;
+}
+
+.text p{
+    font-family: var(--font-family);
+    width: 650px;
+    line-height: 1.7rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.image img{
+    width: 450px;
+    height: 615px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px #2d504f;
 }
 
 #footer {
     grid-area: footer;
-    background: black;
+    background: var(--body-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand {
+    font-family: var(--font-family);
+    color: var(--color-font-gray);
+    font-size: 1.5rem;
+}
+
+.brand a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--color-font-gray);
+    font-weight: 900;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social img{
+    height: 40px;
+    text-decoration: none;
+    margin-left: 50px;
 }
 
 /* CLIENTLIST */
