@@ -31,7 +31,7 @@ html {
 #container-index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90vh 1fr 200px;
+    grid-template-rows: 90vh 1fr 170px;
     height: 200vh;
 
     grid-template-areas: 
