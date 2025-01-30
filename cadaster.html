@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-cadaster.css">
+    <title>Document</title>
+</head>
+
+<body id="cadaster">
+    <div id="cadaster-image">
+        <img src="./assets/dog-standing.png" alt="Avatar">
+    </div>
+    <div id="login">
+        <div id="login-content">
+            <div id="logo-container">
+                <img src="./assets/icon2.png" alt="Icon">
+                <h2>PetShop</h2>
+            </div>
+
+            <div class="client-container">
+                <h3>Tutor</h3>
+            </div>
+
+            <form method="#">
+                <div id="tutor">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite o Nome">
+
+                    <label for="adress">Endereço</label>
+                    <input type="text" id="adress" name="adress" placeholder="Digite o Endereço">
+                    
+                    <div class="input-container">
+                        <div class="individual-data">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Digite o Telefone">
+                        </div>
+                        <div class="individual-data">
+                            <label for="date">Data</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="client-container">
+                    <h3>Pet</h3>
+                </div>
+                <div id="pet">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Digite o nome">
+
+                    <div class="input-container">
+                        <div class="individual-data">
+                            <label for="age">Idade</label>
+                            <input type="number" id="age" name="age" placeholder="Digite a idade (Anos)">
+                        </div>
+                        <div class="individual-data">
+                            <label for="size">Porte</label>
+                            <select name="size" class="size" required> 
+                                <option value="small">Pequeno</option>
+                                <option value="medium">Médio</option>
+                                <option value="big">Grande</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="button-container">
+                    <button type="submit" class="login-button">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

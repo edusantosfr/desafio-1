@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+    font-family: "Neue Montreal-Regular";
+    src: url(./fonts/NeueMontreal-Regular.otf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: #f9f9f9;
+    --font-family: "Josefin Sans", serif;
+    --body-font-family: "Neue Montreal-Regular", serif;
+    --color-font-gray: rgb(49, 49, 49);
+    --color-body-green: #407775;
+    --color-body-lightgreen: #6f7f6c;
+    --color-body-orange: #ec6e40;
+    --color-body-yellow: #ffba52;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+#cadaster-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    background: linear-gradient(to right, var(--color-body-yellow), var(--color-body-orange));
+}
+
+#cadaster-image img {
+    height: 80vh;
+}
+
+#login {
+    background: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-font-gray);
+    font-family: var(--body-font-family);
+}
+
+#login-content {
+    width: 60%;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 6px;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+}
+
+#logo-container img{
+    width: 2.5rem;
+}
+
+#logo-container h2{
+    margin-top: 10px;
+}
+
+.client-container {
+    line-height: 1.7;
+}
+
+.client-container h3 {
+    margin-top: 20px;
+    font-size: 1.7rem;
+    text-align: center;
+    color: var(--color-font-gray);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#tutor {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#pet {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#login-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-controls a {
+    text-decoration: underline;
+}
+
+#login-controls label {
+    font-weight: normal;
+}
+
+input {
+    background: none;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-font-gray);
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    background: none;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--color-font-gray);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.individual-data {
+    gap: .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+#button-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#button-container button {
+    background: linear-gradient(to right, var(--color-body-yellow), var(--color-body-orange));
+    border: 1px solid white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;    
+    }
+    #cadaster-image {
+        display: none;
+    }
+}
