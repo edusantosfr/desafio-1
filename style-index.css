@@ -81,7 +81,7 @@ html {
 .navigation {
     background-color: var(--color-body-orange);
     height: 3rem;
-    width: 10rem;
+    width: 18rem;
     display: flex;
     align-items: center;
     justify-content: center;
