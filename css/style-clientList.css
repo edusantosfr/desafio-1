@@ -121,7 +121,6 @@ input {
 .cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px;
     margin-top: 20px;
     margin-bottom: 30px;
 }

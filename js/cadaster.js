@@ -5,7 +5,7 @@ const clientForm = document.querySelector("#client-form");
     // localStorage.clear()
 
 clientForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     const clientNameInput = document.querySelector("#tutorName");
     const adressInput = document.querySelector("#adress");
@@ -28,8 +28,6 @@ clientForm.addEventListener("submit", (e) => {
     }
 
     let clientList = JSON.parse(localStorage.getItem("clientData")) || [];
-
-
 
     clientList.push(clientObject);
 
