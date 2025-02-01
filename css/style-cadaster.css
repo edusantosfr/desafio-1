@@ -75,6 +75,11 @@ body {
     margin-top: 10px;
 }
 
+#logo-container a{
+    text-decoration: none;
+    color: var(--color-font-gray);
+}
+
 .client-container {
     line-height: 1.7;
 }

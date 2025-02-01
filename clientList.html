@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-clientList.css">
+    <link rel="stylesheet" href="./css/style-clientList.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div id="logo">
-            <img src="./assets/icon.png" alt="icone de palma de gato">
+            <img src="./css/assets/icon.png" alt="icone de palma de gato">
             <a href="index.html">PetShop</a>
         </div>
         <div id="search-bar">
-            <input type="text" placeholder="Pesquise o nome do Pet">
+            <input type="text" name="search-bar" class="search-bar" placeholder="Pesquise o nome do Pet">
             <div class="cadaster-btn">
                 <a href="cadaster.html">Cadastro</a>
             </div>
@@ -25,7 +25,7 @@
             <div class="cards-container">
                 <div class="card">
                     <div class="image">
-                        <img src="./assets/clients/dog.png" alt="">
+                        <img src="./css/assets/clients/dog.png" alt="">
                     </div>
                     <div class="data">
                         <h2 class="title">Juma</h2>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        <img src="./assets/clients/cat.png" alt="">
+                        <img src="./css/assets/clients/cat.png" alt="">
                     </div>
                     <div class="data">
                         <h2 class="title">Duke</h2>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        <img src="./assets/clients/cat.png" alt="">
+                        <img src="./css/assets/clients/cat.png" alt="">
                     </div>
                     <div class="data">
                         <h2 class="title">Duke</h2>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        <img src="./assets/clients/cat.png" alt="">
+                        <img src="./css/assets/clients/cat.png" alt="">
                     </div>
                     <div class="data">
                         <h2 class="title">Duke</h2>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        <img src="./assets/clients/cat.png" alt="">
+                        <img src="./css/assets/clients/cat.png" alt="">
                     </div>
                     <div class="data">
                         <h2 class="title">Duke</h2>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        <img src="./assets/clients/cat.png" alt="">
+                        <img src="./css/assets/clients/cat.png" alt="">
                     </div>
                     <div class="data">
                         <h2 class="title">Duke</h2>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        <img src="./assets/clients/cat.png" alt="">
+                        <img src="./css/assets/clients/cat.png" alt="">
                     </div>
                     <div class="data">
                         <h2 class="title">Duke</h2>
@@ -97,17 +97,28 @@
 
                 <div class="social">
                     <a href="https://instagram.com" target="_blank">
-                        <img src="./assets/instagram.png" alt="instagram logo">
+                        <img src="./css/assets/instagram.png" alt="instagram logo">
                     </a>
                     <a href="https://facebook.com" target="_blank">
-                        <img src="./assets/facebook.png" alt="facebook logo">
+                        <img src="./css/assets/facebook.png" alt="facebook logo">
                     </a>
                     <a href="https://youtube.com" target="_blank">
-                        <img src="./assets/youtube.png" alt="youtube logo">
+                        <img src="./css/assets/youtube.png" alt="youtube logo">
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Este é o Modal</h2>
+            <button id="close">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, provident ratione repudiandae, expedita voluptate perferendis possimus laudantium reprehenderit deserunt enim suscipit ipsam commodi minus rerum optio officiis fuga, qui voluptates.</p>
+        </div>
+    </div>
+    <script src="js/clientList.js"></script>
 </body>
 </html>
