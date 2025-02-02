@@ -22,10 +22,20 @@ searchBar.addEventListener("keyup", (e) => {
     getSearchedTodos(search);
 });
 
+//localStorage.clear()
 
 const divCards = document.querySelector(".cards-container");
 
-window.onload = function carregarItens() {
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+const closeModalBtn = document.querySelector("#close");
+
+const toggleModal = () => {
+    modal.classList.toggle("hide")
+    fade.classList.toggle("hide")
+}
+
+window.onload = function loadItems() {
     let clientList = JSON.parse(localStorage.getItem("clientData")) || [];
 
     clientList.forEach((element) => {
@@ -54,25 +64,33 @@ window.onload = function carregarItens() {
         cardDate.textContent = element.date
         cardData.appendChild(cardDate)
 
+        // MODAL
+
+        card.dataset.uniqueName = element.petName
+
+        card.addEventListener("click", () => openModal(element.petName))
+
         divCards.appendChild(card)
     })
 }
 
-// MODAL
+function openModal(uniqueName) {
+    let clientList = JSON.parse(localStorage.getItem("clientData")) || [];
+    
+    let client = clientList.find(element => element.petName === uniqueName);
+    
+    if (client) {
+        toggleModal()
 
-const cardButton = document.querySelectorAll(".card");
-const closeModalBtn = document.querySelector("#close");
-const modal = document.querySelector("#modal");
-const fade = document.querySelector("#fade");
-
-const toggleModal = () => {
-    modal.classList.toggle("hide")
-    fade.classList.toggle("hide")
+        document.querySelector(".modalPetName").innerHTML = `
+            <h2>${client.petName}</h2>
+        `
+        document.querySelector(".modal-body").innerHTML = `
+            <p>${client.date}</p>
+            <p>${client.clientName}</p>
+        `
+    }
 }
-
-cardButton.forEach((element) => {
-    element.addEventListener("click", () => toggleModal())
-})
 
 fade.addEventListener("click", () => toggleModal())
 
