@@ -16,7 +16,9 @@
         <div id="login-content">
             <div id="logo-container">
                 <img src="./css/assets/icon2.png" alt="Icon">
-                <a href="index.html"><h2>PetShop</h2></a>
+                <a href="index.html">
+                    <h2>PetShop</h2>
+                </a>
             </div>
 
             <div class="client-container">
@@ -30,14 +32,14 @@
 
                     <label for="adress">Endereço</label>
                     <input type="text" id="adress" name="adress" placeholder="Digite o Endereço" required>
-                    
+
                     <div class="input-container">
                         <div class="individual-data">
                             <label for="phone">Telefone</label>
                             <input type="tel" id="phone" name="phone" placeholder="Digite o Telefone" required>
                         </div>
-                        <div class="individual-data">
-                            <label for="date">Data de Atendimento</label>
+                        <div class="individual-data3q2w">
+                            <label for="date">Atendimento</label>
                             <input type="date" id="date" name="date" required>
                         </div>
                     </div>
@@ -47,7 +49,20 @@
                 </div>
                 <div id="pet">
                     <label for="petName">Nome</label>
-                    <input type="text" id="petName" name="petName" placeholder="Digite o nome" required>
+                    <div class="input-container">
+                        <input type="text" id="petName" name="petName" placeholder="Digite o nome" required>
+                        <div class="checkbox-container">
+                            <input type="radio" id="cat" name="pet">
+                            <label for="cat" class="checkbox-label">
+                                <img src="./css/assets/clients/cat.png" class="checkbox-img">
+                            </label>
+
+                            <input type="radio" id="dog" name="pet">
+                            <label for="dog" class="checkbox-label">
+                                <img src="./css/assets/clients/dog.png" class="checkbox-img">
+                            </label>
+                        </div>
+                    </div>
 
                     <div class="input-container">
                         <div class="individual-data">
@@ -56,10 +71,10 @@
                         </div>
                         <div class="individual-data">
                             <label for="size">Porte</label>
-                            <select name="size" id="size" required> 
-                                <option value="small">Pequeno</option>
-                                <option value="medium">Médio</option>
-                                <option value="big">Grande</option>
+                            <select name="size" id="size" required>
+                                <option value="Pequeno">Pequeno</option>
+                                <option value="Médio">Médio</option>
+                                <option value="Grande">Grande</option>
                             </select>
                         </div>
                     </div>

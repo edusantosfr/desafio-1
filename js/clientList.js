@@ -57,11 +57,11 @@ window.onload = function loadItems() {
         card.appendChild(cardData)
 
         const cardName = document.createElement("h2")
-        cardName.textContent = element.petName
+        cardName.textContent = "Pet: "+element.petName
         cardData.appendChild(cardName)
 
         const cardDate = document.createElement("p")
-        cardDate.textContent = element.date
+        cardDate.textContent = "Atendimento: "+element.date
         cardData.appendChild(cardDate)
 
         // MODAL
@@ -85,9 +85,17 @@ function openModal(uniqueName) {
         document.querySelector(".modalPetName").innerHTML = `
             <h2>${client.petName}</h2>
         `
-        document.querySelector(".modal-body").innerHTML = `
-            <p>${client.date}</p>
-            <p>${client.clientName}</p>
+        document.querySelector(".modal-body-tutor").innerHTML = `
+            <h2>Tutor</h2>
+            <h3>Nome do Tutor: ${client.clientName}</h3>
+            <p>Endereço: ${client.adress}</p>
+            <p>Telefone: ${client.phone}</p>
+            <p>Data: ${client.date}</p>
+        `
+        document.querySelector(".modal-body-pet").innerHTML = `
+            <h2>Pet</h2>
+            <p>Idade: ${client.age} ano(s)</p>
+            <p>Porte: ${client.size}</p>
         `
     }
 }

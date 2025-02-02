@@ -145,6 +145,34 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+#petName {
+    width: 70%;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox-img {
+    height: 50px;
+    padding: 2px;
+    background: var(--color-body-yellow);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label img {
+    transform: scale(1.07);
+    filter: brightness(0.7);
 }
 
 .individual-data {
@@ -171,11 +199,22 @@ select {
     font-size: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
     body {
         grid-template-columns: 1fr;    
     }
+
     #cadaster-image {
         display: none;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    #logo-container {
+        font-size: 1.2rem;
+    }
+
+    #logo-container img{
+        width: 2rem;
     }
 }
