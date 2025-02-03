@@ -1,3 +1,25 @@
+const searchBar = document.querySelector(".search-bar");
+
+const getSearchedTodos = (search) => {
+    const all = document.querySelectorAll(".product");
+
+    all.forEach((product) => {
+        const productName = product.querySelector("h2").innerText.toLowerCase();
+
+        product.style.display = "flex";
+
+        if (!productName.includes(search)) {
+            product.style.display = "none";
+        }
+    });
+};
+
+searchBar.addEventListener("keyup", (e) => {
+    const search = e.target.value;
+
+    getSearchedTodos(search);
+});
+
 //localStorage.clear()
 
 const modal = document.querySelector("#modal");

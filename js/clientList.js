@@ -8,8 +8,6 @@ const getSearchedTodos = (search) => {
 
         card.style.display = "flex";
 
-        console.log(petName);
-
         if (!petName.includes(search)) {
             card.style.display = "none";
         }
