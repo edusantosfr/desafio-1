@@ -50,7 +50,11 @@ window.onload = function loadItems() {
         } else {
             image.src = "./css/assets/clients/dog.png"
         }
-        image.alt = ""
+        if (element.pet == "cat") {
+            image.alt = "imagem de gato"
+        } else {
+            image.alt = "imagem de cachorro"
+        }
         image.async = true
         cardImage.appendChild(image)
 
