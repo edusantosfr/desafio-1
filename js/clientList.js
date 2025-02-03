@@ -47,7 +47,11 @@ window.onload = function loadItems() {
         card.appendChild(cardImage)
 
         const image = document.createElement("img")
-        image.src = "./css/assets/clients/dog.png"
+        if (element.pet == "cat") {
+            image.src = "./css/assets/clients/cat.png"
+        } else {
+            image.src = "./css/assets/clients/dog.png"
+        }
         image.alt = ""
         image.async = true
         cardImage.appendChild(image)
@@ -57,11 +61,11 @@ window.onload = function loadItems() {
         card.appendChild(cardData)
 
         const cardName = document.createElement("h2")
-        cardName.textContent = "Pet: "+element.petName
+        cardName.textContent = "Pet: " + element.petName
         cardData.appendChild(cardName)
 
         const cardDate = document.createElement("p")
-        cardDate.textContent = "Atendimento: "+element.date
+        cardDate.textContent = "Atendimento: " + element.date
         cardData.appendChild(cardDate)
 
         // MODAL
@@ -76,9 +80,9 @@ window.onload = function loadItems() {
 
 function openModal(uniqueName) {
     let clientList = JSON.parse(localStorage.getItem("clientData")) || [];
-    
+
     let client = clientList.find(element => element.petName === uniqueName);
-    
+
     if (client) {
         toggleModal()
 

@@ -2,7 +2,7 @@
 
 const clientForm = document.querySelector("#client-form");
 
-    // localStorage.clear()
+//localStorage.clear()
 
 clientForm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -15,6 +15,7 @@ clientForm.addEventListener("submit", (e) => {
     const petNameInput = document.querySelector("#petName");
     const ageInput = document.querySelector("#age");
     const sizeInput = document.querySelector("#size");
+    const petRadio = document.querySelector('input[name="pet"]:checked');
 
     let clientObject = {
         clientName: clientNameInput.value,
@@ -25,6 +26,7 @@ clientForm.addEventListener("submit", (e) => {
         petName: petNameInput.value,
         age: ageInput.value,
         size: sizeInput.value,
+        pet: petRadio.value
     }
 
     let clientList = JSON.parse(localStorage.getItem("clientData")) || [];
@@ -34,7 +36,4 @@ clientForm.addEventListener("submit", (e) => {
     localStorage.setItem("clientData", JSON.stringify(clientList))
 
     window.location.href = "clientList.html";
-
-    // const getClient = localStorage.getItem("clientData")
-    // console.log(getClient)
 })
