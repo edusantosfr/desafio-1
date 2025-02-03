@@ -29,9 +29,10 @@
                     </div>
                     <div class="data">
                         <h2 class="title">Ração Golden Power Training para Cães Filhotes</h2>
-                        <p class="date">R$ 179,89</p>
+                        <p class="value">R$ 179,89</p>
+                        <span class="size">15kg por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product">
                     <div class="image">
@@ -40,8 +41,9 @@
                     <div class="data">
                         <h2 class="title">Ração Golden Fórmula para Cães Senior</h2>
                         <p class="value">R$ 176,89</p>
+                        <span class="size">15kg por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product">
                     <div class="image">
@@ -50,8 +52,9 @@
                     <div class="data">
                         <h2 class="title">Ração Premier Raças Específicas Golden Retriever para Cães Adultos</h2>
                         <p class="value">R$ 244,89</p>
+                        <span class="size">12kg por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product">
                     <div class="image">
@@ -60,18 +63,20 @@
                     <div class="data">
                         <h2 class="title">Ração Úmida GranPlus Gourmet Sachê para Cães Adultos</h2>
                         <p class="value">R$ 3,19</p>
+                        <span class="size">100g por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product">
                     <div class="image">
-                        <img src="./css/assets/eshop/goldenCatAdultos.png" alt="">
+                        <img src="./css/assets/eshop/goldenCatGourmet.png" alt="">
                     </div>
                     <div class="data">
-                        <h2 class="title">Ração Golden Fórmula para Cães Senior</h2>
+                        <h2 class="title">Ração Úmida Golden Gourmet para Gatos Castrados</h2>
                         <p class="value">R$ 3,19</p>
+                        <span class="size">70g por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product">
                     <div class="image">
@@ -80,8 +85,9 @@
                     <div class="data">
                         <h2 class="title">Areia Higiênica Viva Verde Grãos Finos para Gatos</h2>
                         <p class="value">R$ 69,90</p>
+                        <span class="size">4kg por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product">
                     <div class="image">
@@ -90,8 +96,9 @@
                     <div class="data">
                         <h2 class="title">Ração Golden para Gatos Adultos Castrados</h2>
                         <p class="value">R$ 171,89</p>
+                        <span class="size">10.1kg por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="product">
                     <div class="image">
@@ -100,8 +107,9 @@
                     <div class="data">
                         <h2 class="title">Ração Golden para Gatos Filhotes</h2>
                         <p class="value">R$ 28,49</p>
+                        <span class="size">1kg por unidade</span>
                     </div>
-                    <button type="button">Adicionar ao Carrinho</button>
+                    <button class="cart">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
@@ -125,5 +133,16 @@
             </div>
         </div>
     </div>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2>Item Adicionado ao <span>Carrinho</span></h2>
+            <button id="close">Fechar</button>
+        </div>
+        <div class="modal-body-product">
+
+        </div>
+    </div>
+    <script src="./js/eshop.js"></script>
 </body>
 </html>

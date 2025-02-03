@@ -66,12 +66,17 @@ html {
 }
 
 .logo a {
+    display: flex;
+    align-items: center;
     font-size: 1.7rem;
-    margin-top: 7px;
-    margin-left: 5px;
     font-weight: 900;
     text-decoration: none;
     color: white;
+}
+
+.logo span {
+    margin-top: 7px;
+    margin-left: 5px;
 }
 
 .logo img {
@@ -79,9 +84,9 @@ html {
 }
 
 .navigation {
-    background-color: var(--color-body-orange);
+    background: linear-gradient(to right, var(--color-body-yellow), var(--color-body-orange));
     height: 3rem;
-    width: 18rem;
+    width: 16.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,10 +94,17 @@ html {
 }
 
 .navigation a {
+    padding: 10px;
     font-size: 1.2rem;
     color: white;
     text-decoration: none;
     padding-inline: 2rem;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.navigation a:hover {
+    background-color: #da7049;
 }
 
 .cadaster-btn a {
@@ -103,6 +115,13 @@ html {
     padding: .8rem;
     padding-inline: 1.6rem;
     border-radius: 30px;
+    transition: .2s;
+}
+
+.cadaster-btn a:hover {
+    background: var(--color-body-orange);
+    color: white;
+    border: 1px solid white;
 }
 
 .menu-container {

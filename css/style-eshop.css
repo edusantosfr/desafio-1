@@ -134,7 +134,7 @@ input {
     justify-content: ce;
     padding: 30px;
     margin: 10px;
-    height: 470px;
+    height: 480px;
     width: 280px;
     border-radius: 30px;
     font-family: var(--font-family);
@@ -155,6 +155,12 @@ input {
     flex-direction: column;
     gap: 10px;
     justify-content: center;
+}
+
+.data p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 900;
 }
 
 .product button {
@@ -211,3 +217,79 @@ input {
     margin-left: 50px;
 }
 
+/* MODAL */
+
+#fade, #modal {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: var(--body-color);
+    width: 500px;
+    max-width: 90%;
+    padding: 2rem;
+    border-radius: 30px;
+
+    font-family: var(--font-family);
+    color: var(--color-font-gray);
+    font-size: 1.1rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-font-gray);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-header {
+    color: var(--color-body-green);
+}
+
+#close {
+    background: var(--color-body-green);
+    border: none;
+    padding: 1rem;
+    padding-inline: 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: var(--body-font-family);
+    cursor: pointer;
+    margin-bottom: .5rem;
+    color: white;
+}
+
+.modal-body-product {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+#modal.hide, #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
