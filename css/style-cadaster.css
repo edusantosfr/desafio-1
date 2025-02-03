@@ -44,7 +44,7 @@ body {
     height: 80vh;
 }
 
-#login {
+#cadaster-container {
     background: var(--body-color);
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ body {
     font-family: var(--body-font-family);
 }
 
-#login-content {
+#cadaster-content {
     width: 60%;
 }
 
@@ -157,6 +157,7 @@ select {
 .checkbox-container {
     display: flex;
     gap: 10px;
+    margin-left: 10px;
 }
 
 .checkbox-img {
@@ -211,7 +212,13 @@ input[type="radio"]:checked + label img {
     background: linear-gradient(to right, #e4951f, #d34511);
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1280px) {
+    #cadaster-content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 960px) {
     body {
         grid-template-columns: 1fr;    
     }
@@ -222,11 +229,10 @@ input[type="radio"]:checked + label img {
 }
 
 @media screen and (max-width: 496px) {
-    #logo-container {
-        font-size: 1.2rem;
+    #cadaster-content {
+        width: 80%;
     }
-
-    #logo-container img{
-        width: 2rem;
+    body {
+        height: 100vh;
     }
 }
