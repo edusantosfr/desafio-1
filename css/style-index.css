@@ -422,11 +422,11 @@ html {
 
 @media screen and (max-width: 480px)  {
     #container-index {
-        grid-template-rows: 26.4vh 800px 170px;
+        grid-template-rows: 262px 800px 170px;
     }
 
     .navi-container {
-        width: 75%;
+        width: 90%;
     }
 
     .logo a {
@@ -462,7 +462,7 @@ html {
     }
     
     .menu-container img {
-        height: 20vh;
+        height: 198px;
     }
 
     .about-container {
