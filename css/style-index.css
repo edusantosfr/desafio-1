@@ -373,7 +373,7 @@ html {
     }
 
     .navi-bar {
-        background-size: 250px 700px;
+        background-size: 210px 700px;
     }
     
     .navigation {
@@ -418,4 +418,86 @@ html {
         height: 310px;
     }
 
+}
+
+@media screen and (max-width: 480px)  {
+    #container-index {
+        grid-template-rows: 26.4vh 800px 170px;
+    }
+
+    .navi-container {
+        width: 90%;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+    
+    .logo img {
+        height: 15px;
+    }
+
+    .navi-bar {
+        background-size: 160px 700px;
+    }
+    
+    .navigation {
+        height: 2rem;
+        width: 7rem;
+    }
+    
+    .navigation a {
+        font-size: .6rem;
+        padding-inline: .4rem;
+    }
+
+    .cadaster-btn a {
+        font-size: .6rem;
+        padding: .5rem;
+        padding-inline: 1rem;
+    }
+    
+    .menu-container {
+        font-size: 2rem;
+    }
+    
+    .menu-container img {
+        height: 20vh;
+    }
+
+    .about-container {
+        gap: 20px;
+    }
+
+    .text {
+        padding: 25px;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+    }
+    
+    .text p{
+        width: 240px;
+        line-height: 1.4rem;
+        font-size: .8rem;
+        line-height: 1.2rem;
+    }
+
+    .image img{
+        height: 210px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
 }
