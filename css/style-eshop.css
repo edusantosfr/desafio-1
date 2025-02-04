@@ -160,7 +160,6 @@ input {
 }
 
 .data {
-    text-align: start;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -171,6 +170,10 @@ input {
     margin-top: 10px;
     font-size: 1rem;
     font-weight: 900;
+}
+
+.data span {
+    font-size: 1rem;
 }
 
 .product button {
@@ -342,6 +345,10 @@ input {
 }
 
 @media screen and (max-width: 960px) {
+    .cart-btn a {
+        margin-left: 30px;
+    }
+
     .products-container {
         grid-template-rows: 420px;
     }
@@ -359,9 +366,11 @@ input {
     }
     
     .data p {
-        margin-top: 10px;
-        font-size: 1.2rem;
-        font-weight: 900;
+        font-size: 1rem;
+    }
+
+    .data span {
+        font-size: .8rem;
     }
     
     .product button {
@@ -376,7 +385,7 @@ input {
     }
 
     input {
-        width: 70%;
+        width: 80%;
     }
 
     .products-container {
@@ -392,13 +401,17 @@ input {
         margin: 10px;
         max-height: 350px;
         width: 210px;
-        font-size: .5rem;
+        font-size: .6rem;
     }
 
     .product img {
         height: 120px;
     }
     
+    .data {
+        gap: 5px;
+    }
+
     .data p {
         margin-top: 10px;
         font-size: 1rem;
@@ -407,7 +420,7 @@ input {
     
     .product button {
         height: 3rem;
-        width: 10rem;
+        width: 11rem;
         font-size: .7rem;
     }
 
@@ -435,10 +448,57 @@ input {
 }
 
 @media screen and (max-width: 480px) {
+    .container {
+        grid-template-rows: 40px 120px 50px 1fr 170px;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    #products-title {
+        font-size: .8rem;
+    }
+
+    .products-container {
+        grid-template-rows: 270px;
+    }
+    
+    .product {
+        padding: 15px;
+        margin: 5px;
+        max-height: 260px;
+        width: 140px;
+        font-size: .5rem;
+    }
+
+    .product img {
+        height: 80px;
+    }
+    
+    .data {
+        gap: 0px;
+    }
+
+    .data p {
+        font-size: .6rem;
+    }
+
+    .data span {
+        font-size: .5rem;
+    }
+    
+    .product button {
+        height: 2.4rem;
+        width: 7rem;
+        font-size: .6rem;
+    }
+    
     .footer-container {
         gap: 30px;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+    
 }
