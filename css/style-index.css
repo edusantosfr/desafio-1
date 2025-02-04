@@ -31,7 +31,7 @@ html {
 #container-index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90vh 900px 170px;
+    grid-template-rows: 888px 900px 170px;
     height: 100vh;
 
     grid-template-areas: 
@@ -135,7 +135,7 @@ html {
 }
 
 .menu-container img {
-    height: 81.6vh;
+    height: 810px;
 }
 
 .menu-container p {
@@ -248,7 +248,7 @@ html {
     }
     
     .menu-container img {
-        height: 60vh;
+        height: 600px;
     }
 
     .about-container {
@@ -279,7 +279,7 @@ html {
 
 @media screen and (max-width: 960px) {
     #container-index {
-        grid-template-rows: 47.4vh 960px 170px;
+        grid-template-rows: 463px 960px 170px;
     }
 
     .logo a {
@@ -315,7 +315,7 @@ html {
     }
     
     .menu-container img {
-        height: 40vh;
+        height: 390px;
     }
 
     .about-container {
@@ -357,7 +357,7 @@ html {
 
 @media screen and (max-width: 768px)  {
     #container-index {
-        grid-template-rows: 37vh 920px 170px;
+        grid-template-rows: 367px 920px 170px;
     }
 
     .navi-container {
@@ -397,7 +397,7 @@ html {
     }
     
     .menu-container img {
-        height: 30vh;
+        height: 300px;
     }
 
     .about-container {
