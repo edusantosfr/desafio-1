@@ -102,7 +102,7 @@ input {
     transition: .3s;
 }
 
-.cadaster-btn a:hover{
+.cadaster-btn a:hover {
     background: #596b55;
 }
 
@@ -166,15 +166,15 @@ input {
     border-radius: 20px;
 }
 
+.card img {
+    height: 70px;
+}
+
 .data {
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.card img {
-    height: 70px;
 }
 
 #footer {
@@ -218,7 +218,8 @@ input {
 
 /* MODAL */
 
-#fade, #modal {
+#fade,
+#modal {
     transition: .5s;
     opacity: 1;
     pointer-events: all;
@@ -297,11 +298,96 @@ input {
     gap: 1rem;
 }
 
-#modal.hide, #fade.hide {
+#modal.hide,
+#fade.hide {
     opacity: 0;
     pointer-events: none;
 }
 
 #modal.hide {
     top: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 650px;
+    }
+
+    .social img {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cadaster-btn a {
+        margin-left: 10px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 280px;
+        max-height: 320px;
+        font-size: 1rem;
+    }
+    
+    .card img {
+        height: 120px;
+    }
+
+    .brand {
+        font-size: 1rem;
+    }
+
+    .brand a {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .cadaster-btn a {
+        padding: 20px;
+        padding-inline: 25px;
+        font-size: 1rem;
+        margin-left: 10px;
+        border: 1px solid white;
+        transition: .3s;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 220px;
+        max-height: 340px;
+    }
+
+    .card img {
+        height: 100px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
