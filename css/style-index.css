@@ -275,7 +275,6 @@ html {
     .image img{
         height: 530px;
     }
-    
 }
 
 @media screen and (max-width: 960px) {
@@ -331,7 +330,7 @@ html {
         width: 520px;
         line-height: 1.4rem;
         font-size: .8rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .image img{
@@ -354,4 +353,69 @@ html {
         height: 35px;
         margin-left: 20px;
     }
+}
+
+@media screen and (max-width: 768px)  {
+    #container-index {
+        grid-template-rows: 37vh 920px 170px;
+    }
+
+    .navi-container {
+        width: 85%;
+    }
+
+    .logo a {
+        font-size: 1.1rem;
+    }
+    
+    .logo img {
+        height: 20px;
+    }
+
+    .navi-bar {
+        background-size: 250px 700px;
+    }
+    
+    .navigation {
+        height: 2.4rem;
+        width: 9rem;
+    }
+    
+    .navigation a {
+        font-size: .7rem;
+        padding-inline: .6rem;
+    }
+
+    .cadaster-btn a {
+        font-size: .7rem;
+        padding: .6rem;
+        padding-inline: 1.2rem;
+    }
+    
+    .menu-container {
+        font-size: 2.5rem;
+    }
+    
+    .menu-container img {
+        height: 30vh;
+    }
+
+    .about-container {
+        gap: 20px;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+    }
+    
+    .text p{
+        width: 340px;
+        line-height: 1.4rem;
+        font-size: .8rem;
+    }
+
+    .image img{
+        height: 310px;
+    }
+
 }
