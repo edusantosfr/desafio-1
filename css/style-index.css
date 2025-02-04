@@ -31,8 +31,8 @@ html {
 #container-index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 90vh 1fr 170px;
-    height: 200vh;
+    grid-template-rows: 90vh 900px 170px;
+    height: 100vh;
 
     grid-template-areas: 
         "navi-bar"
@@ -91,6 +91,7 @@ html {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    border: 2px solid white;
 }
 
 .navigation a {
@@ -188,7 +189,6 @@ html {
 }
 
 .image img{
-    width: 450px;
     height: 615px;
     border-radius: 30px;
     box-shadow: 10px 10px 30px #2d504f;
@@ -231,4 +231,127 @@ html {
     height: 40px;
     text-decoration: none;
     margin-left: 50px;
+}
+
+
+@media screen and (max-width: 1280px) {
+    #container-index {
+        grid-template-rows: 670px 1200px 170px;
+    }
+
+    .navi-bar {
+        background-size: 400px 700px;
+    }
+    
+    .menu-container {
+        font-size: 5.5rem;
+    }
+    
+    .menu-container img {
+        height: 60vh;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .text {
+        margin-right: 0px;
+    }
+    
+    .text h2 {
+        font-size: 3rem;
+    }
+    
+    .text p{
+        width: 650px;
+        line-height: 1.7rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .image img{
+        height: 530px;
+    }
+    
+}
+
+@media screen and (max-width: 960px) {
+    #container-index {
+        grid-template-rows: 47.4vh 960px 170px;
+    }
+
+    .logo a {
+        font-size: 1.3rem;
+    }
+    
+    .logo img {
+        height: 25px;
+    }
+
+    .navi-bar {
+        background-size: 300px 700px;
+    }
+    
+    .navigation {
+        height: 2.6rem;
+        width: 11rem;
+    }
+    
+    .navigation a {
+        font-size: .9rem;
+        padding-inline: .7rem;
+    }
+
+    .cadaster-btn a {
+        font-size: .9rem;
+        padding: .7rem;
+        padding-inline: 1.4rem;
+    }
+    
+    .menu-container {
+        font-size: 4rem;
+    }
+    
+    .menu-container img {
+        height: 40vh;
+    }
+
+    .about-container {
+        gap: 20px;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+    }
+    
+    .text p{
+        width: 520px;
+        line-height: 1.4rem;
+        font-size: .8rem;
+        margin-top: 2rem;
+    }
+
+    .image img{
+        height: 440px;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+
+    .brand {
+        font-size: 1.0rem;
+    }
+    
+    .brand a {
+        font-size: 2.2rem;
+    }
+    
+    .social img{
+        height: 35px;
+        margin-left: 20px;
+    }
 }
