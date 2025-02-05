@@ -94,6 +94,7 @@ html {
     justify-content: center;
     border-radius: 10px;
     border: 2px solid white;
+    margin-top: 5px;
 }
 
 .navigation a {
@@ -429,7 +430,7 @@ html {
     }
 
     .navi-container {
-        width: 80%;
+        width: 85%;
     }
 
     .logo a {
