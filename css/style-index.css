@@ -46,8 +46,10 @@ html {
     background-image: url(./assets/backgroundm-menu.png);
     background-repeat: no-repeat;
     background-color: #f9f9f9;
-
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .navi-container {
@@ -427,7 +429,7 @@ html {
     }
 
     .navi-container {
-        width: 90%;
+        width: 80%;
     }
 
     .logo a {
