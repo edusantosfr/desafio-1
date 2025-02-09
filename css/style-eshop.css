@@ -294,7 +294,13 @@ input {
     cursor: pointer;
     margin-bottom: .5rem;
     color: white;
+    transition: .2s;
 }
+
+#close:hover {
+    background: #335f5e;
+}
+
 
 .modal-body-product {
     display: flex;

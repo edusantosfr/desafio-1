@@ -1,6 +1,16 @@
-// CADASTER
-
 const clientForm = document.querySelector("#client-form");
+const submitFormBtn = document.querySelector(".login-button");
+const formInput = document.querySelectorAll("input[required]");
+const formRadio = document.querySelectorAll("input[type='radio'][name='pet']");
+
+let verifyInput = () => {
+    const inputRadio = [...formRadio].some(input => input.checked);
+    const input = [...formInput].every(input => input.value !== "");
+
+    submitFormBtn.disabled = !(inputRadio && input);
+}
+formInput.forEach(input => input.addEventListener("input", verifyInput));
+formRadio.forEach(input => input.addEventListener("change", verifyInput));
 
 //localStorage.clear()
 
@@ -31,7 +41,7 @@ clientForm.addEventListener("submit", (e) => {
 
     let clientList = JSON.parse(localStorage.getItem("clientData")) || [];
 
-    clientList.push(clientObject);
+    clientList.push(clientObject)
 
     localStorage.setItem("clientData", JSON.stringify(clientList))
 

@@ -154,6 +154,10 @@ select {
     width: 70%;
 }
 
+#date {
+    cursor: pointer;
+}
+
 .checkbox-container {
     display: flex;
     gap: 10px;
@@ -166,21 +170,25 @@ select {
     background: var(--color-body-yellow);
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.2s, filter 0.2s;
+    transition: transform 0.2s;
 }
 
 input[type="radio"] {
     display: none;
 }
 
+input[type="radio"] + label img {
+    filter: grayscale(80%);
+}
+
 input[type="radio"]:hover + label img {
     transform: scale(1.07);
-    filter: brightness(0.7);
+    filter: none;
 }
 
 input[type="radio"]:checked + label img {
     transform: scale(1.07);
-    filter: brightness(0.7);
+    filter: none;
 }
 
 .individual-data {
@@ -188,6 +196,10 @@ input[type="radio"]:checked + label img {
     display: flex;
     flex-direction: column;
     width: 48%;
+}
+
+#size {
+    cursor: pointer;
 }
 
 #button-container {
@@ -210,6 +222,11 @@ input[type="radio"]:checked + label img {
 
 #button-container button:hover {
     background: linear-gradient(to right, #e4951f, #d34511);
+}
+
+#button-container button:disabled {
+    background: rgb(180, 180, 180);
+    cursor: default;
 }
 
 @media screen and (max-width: 1280px) {

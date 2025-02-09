@@ -127,6 +127,7 @@ input {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: start;
 }
 
 .cards-container {
